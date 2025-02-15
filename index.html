@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthocalc</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили -->
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок -->
+        <h1>Пропорциональность размера зубов</h1>
+
+        <!-- Таблица -->
+        <table id="table">
+            <!-- Заголовок таблицы -->
+            <thead>
+                <tr>
+                    <th></th> <!-- Пустая ячейка для первого столбца -->
+                    <th>2-2</th> <!-- Заголовок второго столбца -->
+                    <th>3-3</th> <!-- Заголовок третьего столбца -->
+                </tr>
+            </thead>
+            <!-- Тело таблицы -->
+            <tbody>
+                <!-- Строка 1: Верх -->
+                <tr>
+                    <td>Верх</td>
+                    <td><input type="text" id="b2" class="input-cell"></td>
+                    <td><input type="text" id="c2" class="input-cell"></td>
+                </tr>
+                <!-- Строка 2: Низ -->
+                <tr>
+                    <td>Низ</td>
+                    <td><input type="text" id="b3" class="input-cell"></td>
+                    <td><input type="text" id="c3" class="input-cell"></td>
+                </tr>
+                <!-- Строка 3: Индекс факт -->
+                <tr>
+                    <td>Индекс факт</td>
+                    <td id="b4"></td>
+                    <td id="c4"></td>
+                </tr>
+                <!-- Строка 4: Индекс норма -->
+                <tr>
+                    <td>Индекс норма</td>
+                    <td>1.33</td>
+                    <td>0.77</td>
+                </tr>
+                <!-- Строка 5: Размер норма верх -->
+                <tr>
+                    <td>Размер норма верх</td>
+                    <td id="b6"></td>
+                    <td id="c6"></td>
+                </tr>
+                <!-- Строка 6: Размер норма низ -->
+                <tr>
+                    <td>Размер норма низ</td>
+                    <td id="b7"></td>
+                    <td id="c7"></td>
+                </tr>
+                <!-- Строка 7: Требуется изменение верх -->
+                <tr>
+                    <td>Требуется изменение верх</td>
+                    <td id="b8"></td>
+                    <td id="c8"></td>
+                </tr>
+                <!-- Строка 8: Требуется изменение низ -->
+                <tr>
+                    <td>Требуется изменение низ</td>
+                    <td id="b9"></td>
+                    <td id="c9"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Кнопка -->
+        <button id="calculateButton">Рассчитать</button>
+    </div>
+    
+    <!-- Подключаем JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
